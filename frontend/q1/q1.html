@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<title>Frontend - Q1 (Flexbox)</title>
+	<style type="text/css" media="screen">
+	 	* {
+			box-sizing: border-box; 
+		}
+		body {
+		  display: flex;
+		  min-height: 100vh;
+		  flex-direction: column;
+		  margin: 0;
+          ;
+		}
+		#main {
+		  display: flex;
+		  flex: 1;
+		}
+		#main > article {
+		  flex: 1;
+		}
+		#main > article, 
+		#main > aside {
+		  flex: 0 0 33vw;
+		  background: #cfedec;
+          border: 1px solid black
+		}
+
+        #main > article, 
+		#main > aside {
+		  flex: 0 0 33vw;
+		  background: #cfedec;
+          border: 1px solid black
+		}
+
+		#main > article {
+		  order: -1;
+          
+		}
+		header, footer {
+		  background: #1b9a96;
+		  height: 20vh;
+		}
+		header, footer, article, nav, aside {
+		  padding: 1em;
+		}
+	</style>
+</head>
+
+<body>
+  <header><nav>Navegação</nav></header>
+  <div id="main">
+    <article>Frontend</article>
+    
+    <aside>Q1</aside>
+
+    <aside>Flexbox</aside>
+  </div>
+  <footer>Rodapé</footer>
+</body>
